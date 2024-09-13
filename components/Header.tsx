@@ -1,15 +1,20 @@
 import React from "react";
 import Link from "next/link";
 import Button from "@mui/material/Button";
+import Image from "next/image";
 
 const Header = () => {
   return (
     <header className="h-[70px] bg-gray-200 flex justify-between items-center py-4 px-4">
       {/* Left side - Logo */}
       <Link href="/" passHref className="no-underline">
-        <h1 className="text-blue-800 text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wider">
-          SAMACHAR
-        </h1>
+        <Image
+          src="/logo.svg"
+          height={100}
+          width={200}
+          alt="logo"
+          className="w-[150px]"
+        />
       </Link>
 
       {/* Right side - Navigation Links */}
