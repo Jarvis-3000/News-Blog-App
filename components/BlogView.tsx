@@ -3,13 +3,11 @@ import { format } from "date-fns";
 import Image from "next/image";
 
 export const BlogView = ({
-  id,
   title,
   description,
   urlToImage,
   author,
   publishedAt,
-  source,
   content,
 }: Blog) => {
   const publishedAtLabel = format(publishedAt, "do MMMM yyyy");
