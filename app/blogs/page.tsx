@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-// pages/blogs.tsx
 import React from "react";
 import axios from "axios";
-import { Blog, BlogList } from "./BlogList";
+import { , BlogList } from "./BlogList";
 import { ListPagination } from "@/components/ListPagination";
 
 interface SerachParams {
