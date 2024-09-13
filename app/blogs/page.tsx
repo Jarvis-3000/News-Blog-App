@@ -5,10 +5,6 @@ import axios from "axios";
 import { Blog, BlogList } from "./BlogList";
 import { ListPagination } from "@/components/ListPagination";
 
-interface BlogsPageProps {
-  blogs: Blog[];
-}
-
 interface SerachParams {
   page?: number | undefined;
 }
@@ -17,9 +13,7 @@ interface BlogsPageProps {
   searchParams: SerachParams;
 }
 
-const BlogsPage: React.FC<BlogsPageProps> = async ({
-  searchParams,
-}: BlogsPageProps) => {
+const BlogsPage = async ({ searchParams }: BlogsPageProps) => {
   const { blogs, pagination }: any = await getBlogsData({
     page: searchParams.page,
   });
