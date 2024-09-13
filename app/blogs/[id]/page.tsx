@@ -19,7 +19,7 @@ const BlogById = async ({ params }: any) => {
   );
 };
 
-export const getBlogById = async (id: any) => {
+const getBlogById = async (id: any) => {
   try {
     const response = await axios.get(
       `${process.env.NEXT_PUBLIC_BLOGS_API}/blogs/${id}`

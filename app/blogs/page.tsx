@@ -35,7 +35,7 @@ const BlogsPage: React.FC<BlogsPageProps> = async ({
   );
 };
 
-export const getBlogsData = async ({ page }: any) => {
+const getBlogsData = async ({ page }: any) => {
   const LIMIT_PER_PAGE = 15;
   const params = { page, limit: LIMIT_PER_PAGE };
 
