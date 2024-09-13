@@ -14,7 +14,7 @@ const LatestBlogsPage = async () => {
   );
 };
 
-export const getLatestBlogsData = async () => {
+const getLatestBlogsData = async () => {
   const response = await axios.get(
     `${process.env.NEXT_PUBLIC_BLOGS_API}/blogs/top-ten`
   );
