@@ -18,7 +18,7 @@ const BlogsPage = async ({ searchParams }: BlogsPageProps) => {
   });
 
   return (
-    <div className="pt-5 px-4 sm:px-8">
+    <div className="pt-5 px-4 sm:px-20 md:px-10">
       <h1 className="text-lg sm:text-xl lg:text-2xl font-bold">Blogs</h1>
       <BlogList blogs={blogs} />
       <div className="w-full fixed bottom-3 left-1/2 transform -translate-x-1/2 flex justify-center">

@@ -7,7 +7,7 @@ const LatestBlogsPage = async () => {
   const { blogs }: any = await getLatestBlogsData();
 
   return (
-    <div className="pt-5 px-4 sm:px-8">
+    <div className="pt-5 px-4 px-4 sm:px-20 md:px-10 ">
       <h1 className="text-lg sm:text-xl lg:text-2xl font-bold">Latest Blogs</h1>
       <BlogList blogs={blogs} />
     </div>

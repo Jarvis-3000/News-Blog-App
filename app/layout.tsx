@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-[1800px] h-[100dvh] flex flex-col bg-gray-50`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-[1800px] mx-auto h-[100dvh] flex flex-col bg-gray-50`}
       >
         <AppRouterCacheProvider options={{ key: "css" }}>
           <Header />
